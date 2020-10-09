@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         String item  = "";
         String searchtxt = txtSearch.getText().toString();
-        int intSearch = Integer.parseInt(txtSearch.getText().toString());
+//        int intSearch = Integer.parseInt(txtSearch.getText().toString());
         item = spinner.getSelectedItem().toString();
 
         List<Movie> moviesList = objMovie.getMovies(item);
@@ -61,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         String str = "";
         for(Movie b:moviesList){
             if (b.getTitle().contains(searchtxt) ) {
-                str += b.getTitle() + "\n"+b.getYear()+"\n"+b.getMovieGenre()+"\n";
+                str += b.getTitle() + "\n";
             }
         }
-        ReasultSearch.setText(str + "\n");
+        ReasultSearch.setText(str );
 //        Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
 //        if (b.getTitle().contains(searchtxt) || b.getYear()==intSearch) {
 //            str += b.getTitle() + "\n"+b.getYear()+"\n"+b.getMovieGenre()+"\n";

@@ -59,10 +59,9 @@ public class MovieData implements IMovie{
     public String[] getTitles() {
         String[] titles = new String[movies.size()];
 
-        Movie movie=new Movie();
         for (int i = 0; i <movies.size(); i++) {
             for (int j = 0; j < titles.length ; j++) {
-                movie = movies.get(i);
+                Movie movie = movies.get(i);
                 titles[j]= String.valueOf(movie.getTitle());
             }
         }
@@ -86,7 +85,8 @@ public class MovieData implements IMovie{
     @Override
     public String[] getMovieGenres() {
         String[] movieGenre = new String[movies.size()];
-        Movie movie=new Movie();
+        Movie movie;
+
         for (int i = 0; i <movies.size(); i++) {
             for (int j = 0; j < movieGenre.length ; j++) {
                 movie = movies.get(i);
