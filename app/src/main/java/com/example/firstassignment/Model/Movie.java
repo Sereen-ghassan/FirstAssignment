@@ -2,13 +2,13 @@ package com.example.firstassignment.Model;
 
 public class Movie {
    private String Title;
-    private int year;
+    private String year;
     private String movieGenre;
     private String url;
     public Movie() {
     }
 
-    public Movie(String title, int year, String movieGenre) {
+    public Movie(String title, String year, String movieGenre) {
         this.Title = title;
         this.year = year;
         this.movieGenre = movieGenre;
@@ -31,11 +31,11 @@ public class Movie {
         this.Title = title;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 

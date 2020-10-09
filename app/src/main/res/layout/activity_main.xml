@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_margin="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background">
 
 
     <TextView
@@ -12,7 +13,8 @@
         android:layout_marginBottom="10dp"
         android:text="Movies Library"
         android:textAlignment="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textFontWeight="700"/>
     <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_margin="5dp"
@@ -73,12 +75,13 @@
 
     <EditText
         android:id="@+id/ReasultSearch"
-        android:layout_width="336dp"
-        android:layout_height="147dp"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="text"
         android:lines="6"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:singleLine="false"/>
     <!--        android:gravity="fill_vertical"-->
 
 </LinearLayout>

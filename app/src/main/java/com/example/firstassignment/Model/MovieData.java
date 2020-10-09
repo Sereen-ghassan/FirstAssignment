@@ -7,21 +7,21 @@ public class MovieData implements IMovie{
     private ArrayList<Movie> movies = new ArrayList<>();
 
     public MovieData(){
-        movies.add(new Movie("Titanic", 2005,
+        movies.add(new Movie("Titanic", "2005",
                 "Romantic"));
-        movies.add(new Movie("Tent", 2010,
+        movies.add(new Movie("Tent", "2010",
                 "Action"));
-                movies.add(new Movie("The New Mutants", 2015,
+                movies.add(new Movie("The New Mutants", "2015",
                 "Horror"));
-                movies.add(new Movie("Once upon a Time In Hollywood", 2019,
+                movies.add(new Movie("Once upon a Time In Hollywood", "2019",
                 "Action"));
-                movies.add(new Movie("Booksmart", 2019,
+                movies.add(new Movie("Booksmart", "2019",
                 "Comedy"));
-                movies.add(new Movie("Mission Impossible 6", 2018,
+                movies.add(new Movie("Mission Impossible 6", "2018",
                 "Action"));
-                movies.add(new Movie("A Quiet Place", 2018,
+                movies.add(new Movie("A Quiet Place", "2018",
                 "Horror"));
-                movies.add(new Movie("A Star is Born", 2018,
+                movies.add(new Movie("A Star is Born", "2018",
                 "Music"));
 
 //        movies.add(new Movie("Titanic", 2005,
