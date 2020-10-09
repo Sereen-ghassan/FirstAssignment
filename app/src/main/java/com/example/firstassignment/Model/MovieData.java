@@ -8,21 +8,38 @@ public class MovieData implements IMovie{
 
     public MovieData(){
         movies.add(new Movie("Titanic", 2005,
-                "Romantic","https://www.onthisday.com/images/articles/titanic-the-movie.jpg"));
+                "Romantic"));
         movies.add(new Movie("Tent", 2010,
-                "Action","https://i.ytimg.com/vi/7D-DVVS0ISY/movieposter.jpg"));
+                "Action"));
                 movies.add(new Movie("The New Mutants", 2015,
-                "Horror","https://upload.wikimedia.org/wikipedia/en/1/1a/TheNewMutantsPoster.jpeg"));
+                "Horror"));
                 movies.add(new Movie("Once upon a Time In Hollywood", 2019,
-                "Action","https://upload.wikimedia.org/wikipedia/en/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png"));
+                "Action"));
                 movies.add(new Movie("Booksmart", 2019,
-                "Comedy","https://lh3.googleusercontent.com/POuB1kZoQRKY-W-A8zkLYoucdDWJDoIhao-FMYMyfbzp7wlMNi0dRTDkcE_APsE8aFc"));
+                "Comedy"));
                 movies.add(new Movie("Mission Impossible 6", 2018,
-                "Action","https://i.pinimg.com/originals/2e/5b/8b/2e5b8b138d189752f18672c464455885.jpg"));
+                "Action"));
                 movies.add(new Movie("A Quiet Place", 2018,
-                "Horror","https://upload.wikimedia.org/wikipedia/en/a/a0/A_Quiet_Place_film_poster.png"));
+                "Horror"));
                 movies.add(new Movie("A Star is Born", 2018,
-                "Music","https://upload.wikimedia.org/wikipedia/en/3/39/A_Star_is_Born.png"));
+                "Music"));
+
+//        movies.add(new Movie("Titanic", 2005,
+//                "Romantic","https://www.onthisday.com/images/articles/titanic-the-movie.jpg"));
+//        movies.add(new Movie("Tent", 2010,
+//                "Action","https://i.ytimg.com/vi/7D-DVVS0ISY/movieposter.jpg"));
+//        movies.add(new Movie("The New Mutants", 2015,
+//                "Horror","https://upload.wikimedia.org/wikipedia/en/1/1a/TheNewMutantsPoster.jpeg"));
+//        movies.add(new Movie("Once upon a Time In Hollywood", 2019,
+//                "Action","https://upload.wikimedia.org/wikipedia/en/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png"));
+//        movies.add(new Movie("Booksmart", 2019,
+//                "Comedy","https://lh3.googleusercontent.com/POuB1kZoQRKY-W-A8zkLYoucdDWJDoIhao-FMYMyfbzp7wlMNi0dRTDkcE_APsE8aFc"));
+//        movies.add(new Movie("Mission Impossible 6", 2018,
+//                "Action","https://i.pinimg.com/originals/2e/5b/8b/2e5b8b138d189752f18672c464455885.jpg"));
+//        movies.add(new Movie("A Quiet Place", 2018,
+//                "Horror","https://upload.wikimedia.org/wikipedia/en/a/a0/A_Quiet_Place_film_poster.png"));
+//        movies.add(new Movie("A Star is Born", 2018,
+//                "Music","https://upload.wikimedia.org/wikipedia/en/3/39/A_Star_is_Born.png"));
 
 
     }
@@ -31,7 +48,7 @@ public class MovieData implements IMovie{
 
         ArrayList<Movie> data = new ArrayList<>();
         for(Movie b : movies){
-            if(b.getTitle().equals(searchData)){
+            if(b.getMovieGenre().equals(searchData)){
                 data.add(b);
             }
         }

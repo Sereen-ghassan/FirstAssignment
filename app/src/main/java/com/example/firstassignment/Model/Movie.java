@@ -8,11 +8,11 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(String title, int year, String movieGenre,String url) {
-        Title = title;
+    public Movie(String title, int year, String movieGenre) {
+        this.Title = title;
         this.year = year;
         this.movieGenre = movieGenre;
-        this.url=url;
+
     }
 
     public String getUrl() {
@@ -28,7 +28,7 @@ public class Movie {
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.Title = title;
     }
 
     public int getYear() {

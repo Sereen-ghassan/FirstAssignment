@@ -52,16 +52,23 @@ public class MainActivity extends AppCompatActivity {
         IMovie objMovie = factory.getModel();
 
         String item  = "";
-
+        String searchtxt = txtSearch.getText().toString();
+        int intSearch = Integer.parseInt(txtSearch.getText().toString());
         item = spinner.getSelectedItem().toString();
 
         List<Movie> moviesList = objMovie.getMovies(item);
 
         String str = "";
         for(Movie b:moviesList){
-            str+=b.getTitle() + "\n";
+            if (b.getTitle().contains(searchtxt) ) {
+                str += b.getTitle() + "\n"+b.getYear()+"\n"+b.getMovieGenre()+"\n";
+            }
         }
-        ReasultSearch.setText(str);
+        ReasultSearch.setText(str + "\n");
 //        Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+//        if (b.getTitle().contains(searchtxt) || b.getYear()==intSearch) {
+//            str += b.getTitle() + "\n"+b.getYear()+"\n"+b.getMovieGenre()+"\n";
+//            System.out.println("________________________");
+//        }
     }
 }

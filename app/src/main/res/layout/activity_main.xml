@@ -1,56 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
+<LinearLayout android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_margin="8dp"
     android:orientation="vertical">
+
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="357dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Movies Library"
         android:textAlignment="center"
-        android:layout_marginBottom="10dp"
-        />
+        android:textSize="20dp"/>
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="186dp"
+        android:layout_height="20dp"
+        android:labelFor="@id/spinner"
+        android:orientation="horizontal"
         android:text="Choose Type For Search"
         android:textAlignment="center"
-        android:labelFor="@id/spinner"
-        android:orientation="horizontal"/>
+        android:textSize="15dp"
+        android:layout_margin="8dp"/>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Search"
-        android:textAlignment="center"
-        android:labelFor="@id/txtSearch" />
-    <EditText
-        android:id="@+id/txtSearch"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:inputType="text"
-        android:hint= "@string/enter_value_To_Search"
-        />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:labelFor="@id/txtSearch"
+            android:padding="8dp"
+            android:text=" Search"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/enter_value_To_Search"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onClickSearch"
+            android:padding="8dp"
+            android:text="Search" />
+    </LinearLayout>
+
     <EditText
         android:id="@+id/ReasultSearch"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:inputType="text"
-
-        />
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClickSearch"
-        android:text="Search"
+        android:layout_margin="8dp"
+        android:textSize="15dp"
+        android:orientation="vertical"
         />
 
 </LinearLayout>
