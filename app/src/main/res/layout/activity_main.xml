@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movies Library"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Type For Search"
+        android:textAlignment="center"
+        android:labelFor="@id/spinner"
+        android:orientation="horizontal"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Search"
+        android:textAlignment="center"
+        android:labelFor="@id/txtSearch" />
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:hint= "@string/enter_value_To_Search"
+        />
+    <EditText
+        android:id="@+id/ReasultSearch"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+
+        />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSearch"
+        android:text="Search"
+        />
+
+</LinearLayout>
