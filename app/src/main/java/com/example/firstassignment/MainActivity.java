@@ -61,14 +61,9 @@ public class MainActivity extends AppCompatActivity {
         String str = "";
         for(Movie b:moviesList){
             if (b.getTitle().contains(searchtxt) ) {
-                str += b.getTitle() + "\n";
+                str += b.getTitle() + " " + b.getYear()+" " + b.getMovieGenre()+"\n";
             }
         }
         ReasultSearch.setText(str );
-//        Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
-//        if (b.getTitle().contains(searchtxt) || b.getYear()==intSearch) {
-//            str += b.getTitle() + "\n"+b.getYear()+"\n"+b.getMovieGenre()+"\n";
-//            System.out.println("________________________");
-//        }
     }
 }

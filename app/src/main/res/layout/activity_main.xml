@@ -74,10 +74,11 @@
     <EditText
         android:id="@+id/ReasultSearch"
         android:layout_width="336dp"
-        android:layout_height="177dp"
+        android:layout_height="147dp"
         android:layout_margin="8dp"
-        android:gravity="fill_vertical"
         android:inputType="text"
+        android:lines="6"
         android:textSize="15dp" />
+    <!--        android:gravity="fill_vertical"-->
 
 </LinearLayout>
